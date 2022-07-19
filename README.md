@@ -1,8 +1,9 @@
 # Projeto final {Reprograma} Todas em Tech Back-end
 
-># Apoio mútuo de estudantes em mobilidade urbana
+># DOM - Apoio mútuo de estudantes em mobilidade urbana
 
 A API visa possibilitar a doação de móveis de estudantes para outros estudantes que estejam se mudando de cidade para começar os estudos.
+
 API feita como projeto final do Bootcampo Todas em Tech em Back-end da [{Reprograma}](https://reprograma.com.br/)
 
 ## Índice do Projeto
@@ -20,7 +21,12 @@ API feita como projeto final do Bootcampo Todas em Tech em Back-end da [{Reprogr
 <div id='introducao'/>
 
  ## 📝 Introdução 
-Em construção.
+Tendo em vista a maior mobilidade urbana proporcionada pelo ENEM, em que estudantes podem se candidatar a vagas em todo o território nacional, este projeto propõe a criação de uma API para facilitar a doação de móveis e outros objetos entre estudantes.
+
+A ideia é que a estudante - chegando em uma cidade ou estado novo para estudar - possa se conectar com outras estudantes que estejam voltando para suas cidades natais, se mudando novamente ou simplesmente doando móveis e objetos.
+
+Esse tipo de troca e ajuda mútua entre alunas e alunos da mesma universidade e curso são comuns, a API propõe apenas facilitar a comunicação.
+
 
 <div id='objetivo'/>
 
