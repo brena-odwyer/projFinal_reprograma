@@ -105,7 +105,21 @@ const studentByUniveristy = async (req, res) => {
     }
 };
 
-// Criar um find por booleano donations true
+const studentByDonationTrue = async (req, res) => {
+    try {
+        const allStudentsByDonationTrue = await Student.find({donation: true});
+
+        res.status(200).json({
+            "message": "Estudantes com doações cadastradas",
+            allStudentsByDonationTrue
+        })
+
+    } catch (error) {
+        res.status(500).json({
+            message: error.message 
+        });
+    }
+};
 
 const updateStudentById = async (req, res) => {
     try {
@@ -162,6 +176,7 @@ module.exports = {
     studentById,
     studentByName,
     studentByUniveristy,
+    studentByDonationTrue,
     updateStudentById,
     deleteStudentById
 }
