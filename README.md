@@ -16,15 +16,14 @@ API feita como projeto final do Bootcampo Todas em Tech em Back-end da [{Reprogr
 * [Agradecimentos](#agradecimentos)
 * [Sobre a autora](#sobre)
 
----
 
 <div id='introducao'/>
 
  ## 📝 Introdução 
-
- ---
+Em construção.
 
 <div id='objetivo'/>
+Em construção.
 
  ## ♻️ Objetivo
 
