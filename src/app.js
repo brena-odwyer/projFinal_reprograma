@@ -12,6 +12,7 @@ const userRoutes = require("./routes/user");
 const studentRoutes = require("./routes/student");
 const donationRoutes = require("./routes/donation");
 
+// app.use((req, res, next) => console.log(req.url, next()))
 app.use(cors());
 app.use(express.json());
 
