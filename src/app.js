@@ -16,6 +16,13 @@ const donationRoutes = require("./routes/donation");
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.status(200).send({title: "Reprograma -> Dom - Ajuda mútua para estudantes - Projeto Final",
+    version: "1.0.0",
+    mensagem: "Recebam as boas-vindas, você está no DOM - Ajuda mútua para estudantes"
+    })
+}); //endpoint para o heroku
+
 app.use("/users", userRoutes);
 app.use("/student", studentRoutes);
 app.use("/donation", donationRoutes);

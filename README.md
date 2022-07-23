@@ -8,7 +8,7 @@ API feita como projeto final do Bootcampo Todas em Tech em Back-end da [{Reprogr
 
 ## Índice do Projeto
 * [Introdução e objetivo](#introducao)
-* [Tecnologias Utilizadas](#tecnologias)
+* [Tecnologias utilizadas](#tecnologias)
 * [Arquitetura MVC](#arquitetura)
 * [Utilização da API](#aplicacao)
 * [Mapeamento das Rotas](#rotas)
@@ -26,7 +26,7 @@ A ideia é que a estudante - chegando em uma cidade ou estado novo para estudar 
 
 Esse tipo de troca e ajuda mútua entre alunas e alunos da mesma universidade e curso são comuns, a API propõe apenas facilitar a comunicação.
 
-O nome da API "dom" é uma brincadeira para estudantes de antropologia remetendo ao clássico texto de Marcel Mauss, Ensaio sobre a Dádiva, também conhecido como Ensaio sobre o Dom em que o famoso antropólogo discute trocas recíprocas.
+O nome da API "DOM" é uma brincadeira para estudantes de antropologia remetendo ao clássico texto de Marcel Mauss, Ensaio sobre a Dádiva, também conhecido como Ensaio sobre o Dom, em que o famoso antropólogo discute trocas recíprocas.
 
 
 <div id='tecnologias'/>
@@ -56,7 +56,6 @@ As seguintes tecnologias foram utilizadas:
 - [nodemon](https://www.npmjs.com/package/nodemon)
 - [Jest](https://jestjs.io/pt-BR/)
 - [supertest](https://www.npmjs.com/package/supertest)
-
 <br>
 
 <div id='arquitetura'/>
@@ -135,7 +134,7 @@ Em construção.
 <div id='melhorias'/>
 
 ## Futuras melhorias
-- Terminar a implementação dos testes em todas as rotas.
+- Melhorar e terminar a implementação dos testes em todas as rotas.
 - Implementação do front-end.
 
 <div id='agradecimentos'/>
