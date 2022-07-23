@@ -1,12 +1,12 @@
 # Projeto final {Reprograma} Todas em Tech Back-end
 
-># DOM - Apoio mútuo de estudantes em mobilidade urbana
+># DOM - Ajua mútua de estudantes em mobilidade urbana
 
 A API visa possibilitar a doação de móveis de estudantes para outros estudantes que estejam se mudando de cidade para começar os estudos.
 
 API feita como projeto final do Bootcampo Todas em Tech em Back-end da [{Reprograma}](https://reprograma.com.br/)
 
-## Índice do Projeto
+## Índice do projeto
 * [Introdução e objetivo](#introducao)
 * [Tecnologias utilizadas](#tecnologias)
 * [Arquitetura MVC](#arquitetura)
@@ -26,7 +26,7 @@ A ideia é que a estudante - chegando em uma cidade ou estado novo para estudar 
 
 Esse tipo de troca e ajuda mútua entre alunas e alunos da mesma universidade e curso são comuns, a API propõe apenas facilitar a comunicação.
 
-O nome da API "DOM" é uma brincadeira para estudantes de antropologia remetendo ao clássico texto de Marcel Mauss, Ensaio sobre a Dádiva, também conhecido como Ensaio sobre o Dom, em que o famoso antropólogo discute trocas recíprocas.
+O nome da API, "DOM", é uma brincadeira para estudantes de antropologia remetendo ao clássico texto de Marcel Mauss, Ensaio sobre a Dádiva, também conhecido como Ensaio sobre o Dom, em que o famoso antropólogo discute trocas recíprocas.
 
 
 <div id='tecnologias'/>
