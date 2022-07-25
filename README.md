@@ -137,7 +137,7 @@ Com a aplicação clonada e as dependências configuradas basta rodar a aplicaç
 npm start
 ```
 
-Para acessar via Heroku, acesse [link da API](https://dom-ajuda-mutua-estudantes.herokuapp.com//)
+Para acessar via Heroku, acesse: https://dom-ajuda-mutua-estudantes.herokuapp.com/
 
  <div id='rotas'/>
 
@@ -202,4 +202,4 @@ Brena O'Dwyer é antropóloga e tradutora, em transição de carreira para o des
 
 - [LinkedIn](https://www.linkedin.com/in/brena-odwyer/)
 - [GitHub](https://github.com/brena-odwyer)
-- [Currículo] (https://brena-odwyer.github.io/)
+- Currículo: https://brena-odwyer.github.io/
