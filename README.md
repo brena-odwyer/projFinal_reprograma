@@ -28,6 +28,8 @@ Esse tipo de troca e ajuda mútua entre alunas e alunos da mesma universidade e 
 
 O nome da API, "DOM", é uma brincadeira para estudantes de antropologia remetendo ao clássico texto de Marcel Mauss, Ensaio sobre a Dádiva, também conhecido como Ensaio sobre o Dom, em que o famoso antropólogo discute trocas recíprocas.
 
+A API permite que a usuária faça seu cadastro no site, realize login, atualize seu cadastro e delete seu cadastro. Com o login realizado a usuária pode se cadastrar como estudante, listar todas as estudantes ou listar por nome, universidade, doação e id. Pode também atualizar e deletar seu cadastro de estudante. Quando cadastrada como estudante, a usuária pode cadastrar doações, listar todas as doações ou então listar por descrição, objeto e id. A usuária pode também atualizar e deletar a doação.
+
 
 <div id='tecnologias'/>
 
@@ -113,22 +115,63 @@ PROJETO_FINAL   |
 <div id='aplicacao'/>
 
  ## Utilização da API
- Em construção.
+ ### 1º Passo - Clonar o respositório
+Clone este projeto para a sua máquina local.
+```sh
+git clone https://github.com/brena-odwyer/projFinal_reprograma
+```
+
+### 2º Passo - Instalar as dependências
+Para instalar as dependências do projeto, digite o comando no terminal:
+```sh
+npm i
+```
+
+### 3º Passo - Configurar o ambiente
+Para configurar o ambiente é necessário duplicar o arquivo `.env.example` e renomea-lo somente para `.env`.</br>
+Em seguida, altere as informações contidas no arquivo `.env` para as informações correspondentes a sua máquina e e inclua os valores para PORT com a porta, MONGO_URI com a URL do MongoDb e SECRET com o secret.
+
+### 4º Passo - Executar a aplicação
+Com a aplicação clonada e as dependências configuradas basta rodar a aplicação com o comando no terminal:
+```sh
+npm start
+```
+
+Para acessar via Heroku, acesse [link da API](https://dom-ajuda-mutua-estudantes.herokuapp.com//)
 
  <div id='rotas'/>
 
  ## Mapeamento das rotas
-Em construção.
 
 | Método HTTP | Endpoint           | Descrição                                                 |
 | ----------- | ------------------ | --------------------------------------------------------- |
-| GET         | `/all`             | Faz tal              |
-| GET         | `/xxxxxx`          | Faz tal              |
-| GET         | `/xxxxxxx`         | Faz tal              |
-| GET         | `/xxxxxxx`         | Faz tal              |
-| POST        | `/xxxxxxxxxx`      | Faz tal              |
-| PATCH       | `/xxxxxxxxxxx/:id` | Faz tal              |
-| DELETE      | `/delete/:id`      | Faz tal              |
+| GET         | `/`             | Mensagem de apresentação.             |
+| POST        | `/users/register`          | Faz o cadastro da usuária.              |
+| POST        | `/users/login`         | Faz o login da usuária.             |
+| PUT         | `/users/update/:id`         | Faz o update do email e senha da usuária.              |
+| DELETE        | `/users/delete/:id`      | Deleta a usuária.              |
+
+
+| Método HTTP | Endpoint           | Descrição                                                 |
+| ----------- | ------------------ | --------------------------------------------------------- |
+| POST         | `/student/create`             | Cria perfil da estudante.             |
+| GET         | `/student/all`          | Lista todas as estudantes.              |
+| GET         | `/student/filterName`         | Lista estudantes por nome.             |
+| GET         | `/students/filterUniversity`         | Lista estudantes por universidade.              |
+| GET        | `/students/filterDonation`      | Lista estudantes por tipo de doação.              |
+| GET       | `/students/filterById/:id` | Lista a estudante pelo id.              |
+| PUT      | `/update/:id`      | Faz o update do cadastro da estudante.             |
+| DELETE      | `/delete/:id`      | Deleta o cadastro da estudante.             |
+
+| Método HTTP | Endpoint           | Descrição                                                 |
+| ----------- | ------------------ | --------------------------------------------------------- |
+| POST         | `/donation/create`             | Cria uma doação conectada ao perfil de uma estudante.             |
+| GET         | `/donation/all`          | Lista todas as doações.              |
+| GET         | `/donation/filterDescription`         | Lista as doações pela descrição.             |
+| GET         | `/donation/filterObject`         | Lista as doações por objeto.              |             |
+| GET       | `/donation/filterById/:id` | Lista a doação pelo id.              |
+| PUT      | `/update/:id`      | Faz o update da doação.             |
+| DELETE      | `/delete/:id`      | Deleta a doação.             |
 
 
 <div id='melhorias'/>
@@ -136,11 +179,16 @@ Em construção.
 ## Futuras melhorias
 - Melhorar e terminar a implementação dos testes em todas as rotas.
 - Implementação do front-end.
+- Criação de grupos por universidade, para facilitar a troca e doação de objetos.
 
 <div id='agradecimentos'/>
 
 ## Agradecimentos
-Em construção.
+A trajetória do bootcampo da {Reprograma}, assim como as coisas boas da vida, foi cheia de altos e baixos, risos e choros, superação e aprendizado. Mas uma viagem - de um lugar em que código, desenvolvimento e back-end eram conceitos e ideias totalmente desconhecidos até aqui - se faz nas companhias e eu tive as melhores possíveis. Agradeço a todas as mulheres da turma ON15 pelo carinho, amizade, companheirismo, bom humor e apoio, essas noviças são maravilhosas!
+
+Gostaria de agradecer também a todas as professoras que estiveram conosco nesses sábados, respondendo pacientemente a todas as minhas dúvidas: Amanda Silva, Lilit Bandeira, Hannah Freitas, Ana Lu Sampaio, Beatriz Ramerindo e Paula Allemand. Um agradecimento especial também a Bea e Hannah pelo acompanhemento nas semanas de projeto e por toda a ajuda (não só no código, mas também, e especialmente, pelo apoio moral mais do que necessário).
+
+Participar de um projeto pensado, gerido, feito por e para mulheres é muito especial. Por isso, agradeço também a toda equipe {Reprograma},  monitoras das aulas, dos plantões de dúvida, coordenadora de ensino, Raissa e Letícia, da empregabilidade, e Ju, da orientação educacional, por segurar nossas mãos nessa jornada. E, lógico, um muito obrigada especialíssimo a Jess Guerra, melhor BTL não há.
 
 Readmes utilizados como referência: 
 - https://github.com/anacarolliny/ReprogramaProjetoFinal
@@ -154,3 +202,4 @@ Brena O'Dwyer é antropóloga e tradutora, em transição de carreira para o des
 
 - [LinkedIn](https://www.linkedin.com/in/brena-odwyer/)
 - [GitHub](https://github.com/brena-odwyer)
+- [Currículo] (https://brena-odwyer.github.io/)
