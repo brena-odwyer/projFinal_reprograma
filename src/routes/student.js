@@ -9,8 +9,8 @@ router.get("/all", checkAuth, studentController.allStudents);
 router.get("/filterName", checkAuth, studentController.studentByName);
 router.get("/filterUniversity", checkAuth, studentController.studentByUniveristy);
 router.get("/filterDonation", checkAuth, studentController.studentByDonationTrue);
-router.get("filterById/:id", checkAuth, studentController.studentById);
-router.put("update/:id", checkAuth, studentController.updateStudentById);
-router.delete("delete/:id", checkAuth, studentController.deleteStudentById);
+router.get("/filterById/:id", checkAuth, studentController.studentById);
+router.put("/update/:id", checkAuth, studentController.updateStudentById);
+router.delete("/delete/:id", checkAuth, studentController.deleteStudentById);
 
 module.exports = router;
